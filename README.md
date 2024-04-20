@@ -15,4 +15,4 @@ Conteúdo do curso
 
 ##### Certificado de conclusão<br>
 
-<img align="center" alt="Dev-HTML" height="500em" src="https://github.com/FabioNunesDEV/Alura-Curso-NET6-criando-uma-web-API/blob/main/Certificado/Captura%20de%20tela%202024-02-29%20223805.png">
+<img align="center" alt="Dev-HTML" height="500em" src="https://github.com/FabioNunesDEV/Certificado/blob/main/Fábio Vicente Nunes - Curso .NET 6 e Identity_ implementando controle de usuário - Alura.png">
