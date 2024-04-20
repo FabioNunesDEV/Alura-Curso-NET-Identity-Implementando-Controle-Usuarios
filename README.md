@@ -1,5 +1,4 @@
-# Alura-Curso-NET-Identity-Implementando-Controle-Usuarios
-Curso Alura - .NET 6 e Identity: implementando controle de usuário
+# Curso Alura - .NET 6 e Identity: implementando controle de usuário
 
  Professor: Daniel Artine<br>
  [GitHub](https://github.com/danielartine)<br>
