@@ -15,4 +15,4 @@ Conteúdo do curso
 
 ##### Certificado de conclusão<br>
 
-<img align="center" alt="Dev-HTML" height="500em" src="https://github.com/FabioNunesDEV/Certificado/blob/main/Fábio Vicente Nunes - Curso .NET 6 e Identity_ implementando controle de usuário - Alura.png">
+<img align="center" alt="Dev-HTML" height="500em" src="https://github.com/FabioNunesDEV/Certificados/blob/main/F%C3%A1bio%20Vicente%20Nunes%20-%20Curso%20.NET%206%20e%20Identity_%20implementando%20controle%20de%20usu%C3%A1rio%20-%20Alura.png">
