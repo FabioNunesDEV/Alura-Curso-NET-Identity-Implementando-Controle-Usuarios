@@ -2,6 +2,10 @@
 
 namespace UsuariosAPI.Models;
 
-public class Usuario
+public class Usuario: IdentityUser
 {
+    public DateTime DataNacimento { get; set; }
+
+    public Usuario() : base() { }
+
 }
