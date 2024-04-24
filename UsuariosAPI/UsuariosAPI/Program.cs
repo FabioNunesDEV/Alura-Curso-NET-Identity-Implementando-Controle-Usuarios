@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UsuariosAPI.Data;
 using UsuariosAPI.Models;
+using UsuariosAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connectionString = builder.Configuration.GetConnectionString("UsuariosAPIContext");
+var connectionString = builder.Configuration.GetConnectionString("UsuarioConnection");
+
 builder.Services.AddDbContext<UsuarioDbContext>(opts =>
 {
     opts.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
@@ -22,7 +24,21 @@ builder.Services
     .AddIdentity<Usuario, IdentityRole>()
     .AddEntityFrameworkStores<UsuarioDbContext>()
     .AddDefaultTokenProviders();
-    
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    // Default Password settings.
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequiredLength = 6;
+    options.Password.RequiredUniqueChars = 1;
+});
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddScoped<CadastroService>();
 
 var app = builder.Build();
 
