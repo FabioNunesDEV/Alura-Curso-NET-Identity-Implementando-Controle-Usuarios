@@ -14,7 +14,8 @@ public class TokenService
         Claim[] claims = new Claim[] {
             new Claim("username",usuario.UserName),
             new Claim("id",usuario.Id),
-            new Claim(ClaimTypes.DateOfBirth,usuario.DataNascimento.ToString())
+            new Claim(ClaimTypes.DateOfBirth,usuario.DataNascimento.ToString()),
+            new Claim("loginTimestamp", DateTime.UtcNow.ToString())
         };
         
         // Se a string usada para gerar a chave não tiver pelo menos 33 caracteres, o código irá lançar uma exceção.
